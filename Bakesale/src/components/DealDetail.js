@@ -33,11 +33,11 @@ class DealDetail extends React.Component {
                     duration: 250,
                 }).start(() => this.handleSwipe(-1*direction));
             }
-            // else {
-            //     Animated.spring(this.imageXPos, {
-            //         toValue: 0,
-            //     }).start();
-            // }
+            else {
+                Animated.spring(this.imageXPos, {
+                    toValue: 0,
+                }).start();
+            }
         },
     });
 
